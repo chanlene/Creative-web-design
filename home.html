@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/seo-panda-icon.png" type="image/png">
+	<title>Cassadee</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/cassadee.js"></script>
+	<link rel="stylesheet" href="cassadee.css">
+</head>
+<body>
+<div class="navbar">
+	<div class="container">
+  <a href="#http://cassadee.baryahost.com/cassadee.zip" download="cassadee.zip">Download</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Documents
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+    <a href="#getting">Getting Started</a>
+      <a href="#typo">Typography</a>
+      <a href="#para">Paragraph</a>
+      <a href="#list">List</a>
+      <a href="#btn">Buttons</a>
+      <a href="#form">Forms</a>
+      <a href="#tbl">Tables</a>
+       <a href="#alert">Alert</a>
+      <a href="#grid">Grid System</a>
+    </div>
+  </div> 
+</div>
+</div>
+
+
+<div class="container">
+<div class="header">
+	<img class="panda" src="img/seo-panda-icon.png">
+	<div class="name">CASSADEE</div>
+	<div class="head">
+		<p>A Green Nature CSS Framework</p>
+				<a class="dl-button" href="#http://cassadee.baryahost.com/cassadee.zip" download="cassadee.zip">Download</a>
+	</div>
+</div>
+
+
+
+<div class="clearfix"></div>
+</div>
+
+	<div class="container">
+	<h1 id="getting">Getting Started</h1>
+	<div class="get">
+	<p>Cassadee is a framework for CSS  is a pre-prepared software framework that is meant to allow for easier, more standards-compliant web design using the Cascading Style Sheets language. Most of these frameworks contain at least a grid.</p>
+	<p>Cassadee builds on Sublime Text 3 and provides layout and styling for native HTML elements, plus the most common UI components. It's what you need, without the cruft.</p>
+	
+	
+	<h3>What exactly does cassadee.css provide?</h3>
+	<p>Cassadee has minimal styles and encourages you to write your application styles on top of it. It's designed to get out of your way and makes it easy to override styles.</p>
+	<p>You can see an overview of the modules below:</p>
+	<ul>
+		<li><b>Grid</b> - Powerful, responsive grid system based on the Flexible Layout Module (commonly known as flexbox)</li>
+		<li><b>Input Control</b> - Form, input element, checkbox, radio button and button styling</li>
+		<li><b>Table</b> - Modern table styling and table responsiveness for mobile devices</li>
+		<li><b>List</b> - Bullets and number list.</li>
+	</ul>
+</div>
+
+<h3>Folder Structure</h3>
+<pre class="code-folder">
+	<code>
+cassadee/
+├── js/                           
+│   └── cassadee.js
+├── cassadee.min.css
+├── cassadee.css
+└── cassadee.html
+	</code>
+</pre>
+
+
+<hr>
+</div>
+
+
+
+
+
+<div class="body-css">
+
+	<div class="container">
+	<h2 id="typo">TYPOGRAPHY</h2>
+	<p>Type is all set with the <code>rem</code> unit, which stands for "root em". The <code>rem</code> unit is relative to the font-size of the root element <code>html</code> . That means that we can define a single font size on the root element, and define all <code>rem</code> units to be a percentage of that. The typography has <code>font-size</code> defined in 1.6rem (16px) and <code>line-height</code> in 1.6 (24px).</p> 
+
+	<p>Cassadee uses the font-family Open Sans Condensed, created by <u>Steve Matteson</u>, and provided by Google. Other type basics like <a href="#">anchors</a>, <b>strong</b>, <i>emphasis</i>, and <u>underline</u> are all obviously included.</p>
+	<p><b>Headings</b> create a family of distinct sizes each with specific letter-spacing, line-height, and margins</p>
+
+<div class="row">
+	<div class="col-30">
+	<h1>Heading<span class="heading-font-size1"><code class="heading-font-size1"> &lt;h1&gt;</code> 4.6rem (46px)</span></h1>
+	<h2>Heading <span class="heading-font-size2"><code class="heading-font-size2"> &lt;h2&gt;</code> 3.6rem (36px)</span></h2>
+	<h3>Heading<span class="heading-font-size3"><code class="heading-font-size3"> &lt;h3&gt;</code> 2.8rem (28px)</span></h3>
+	<h4>Heading<span class="heading-font-size4"><code class="heading-font-size4"> &lt;h4&gt;</code> 2.2rem (22px)</span></h4>
+	<h5>Heading<span class="heading-font-size5"><code class="heading-font-size5"> &lt;h5&gt;</code> 1.8rem (18px)</span></h5>
+	<h6>Heading<span class="heading-font-size6"><code class="heading-font-size6"> &lt;h6&gt;</code> 1.6rem (16px)</span></h6>
+</div>
+<div class="col-70">
+<pre class="code-heading">
+<code>
+&lt;!-- Standard Headings --&gt;
+	&lt;h1>Heading&lt;/h1>
+	&lt;h2>Heading&lt;/h2>
+	&lt;h3>Heading&lt;/h3>
+	&lt;h4>Heading&lt;/h4>
+	&lt;h5>Heading&lt;/h5>
+	&lt;h6>Heading&lt;/h6>
+
+&lt;!-- Other styled text tags --&gt;
+	&lt;a&gt;Anchor&lt;a&gt;
+	&lt;strong&gt;Bolded&lt;/strong&gt;
+	&lt;em&gt;Italicized&lt;/em&gt;
+	&lt;u&gt;Underlined&lt;/u&gt;
+</code>
+</pre>
+</div>
+<div class="clearfix"></div>
+</div>
+<hr>
+<div class="container">
+	<h2 id="para">PARAGRAPH</h2>
+	<p>The heart of the paragraph is the evidence used to prove the point. For example, a piece of support in an essay about drug usage could read, "Drug usage is becoming an increasing problem in the United States." After that, introduce a statistic showing the rise of drug usage over the last decade. Once you have cited the statistic, include a piece of analysis that explains why and how this rise is detrimental to the country and to the future.</p>
+	<pre class="code-para">
+		<code>
+
+&lt;p&gt;The heart of the paragraph is the evidence used to prove the point. For example, a piece of support in an essay about drug usage could read, 
+"Drug usage is becoming an increasing problem in the United States".  After that, introduce a statistic showing the rise of drug usage over the last decade. 
+Once you have cited the statistic, include a piece of analysis that explains why and how this rise is detrimental to the country and to the future.&lt;/p&gt;
+		</code>
+	</pre>
+</div>
+<hr>
+<div class="container">
+<div class="list">
+<h2 id="list">LIST</h2>
+
+<div class="row">
+<div class="col-50">
+<ul>
+	<li>Unordered lists have basic styles</li>
+	<li>They use the circle list style</li>
+		<ul>
+			<li>Nested lists styled to feel right</li>
+			<li>Can nest either type of list into the other</li>
+		</ul>
+	<li>Just more list items mama san</li>
+</ul>
+</div>
+<div class="col-50">
+	<ol>
+		<li>Ordered lists also have basic styles</li>
+		<li>They use the decimal list style</li>
+			<ol>
+				<li>Ordered and unordered can be nested</li>
+				<li>Can nest either type of list into the other</li>
+			</ol>
+		<li>Last list item just for the fun</li>
+	</ol>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<div class="list-code">
+<pre>
+	<code>
+&lt;!-- Unordered list --&gt;
+&lt;ul>
+ 	&lt;li&gt;Item 1&lt;/li&gt;
+  	&lt;li&gt;Item 2
+    	&lt;ul&gt;
+     		 &lt;li>Item 2.1&lt;/li&gt;
+      		&lt;li>Item 2.2&lt;/li&gt;
+    	&lt;/ul&gt;
+  	&lt;/li&gt;
+  	&lt;li>Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Change the &lt;ul&gt; to &lt;ol&gt; Ordered List --&gt;
+	</code>
+</pre>
+</div>
+</div>
+<hr>
+</div>
+
+<div class="container">
+	<h2 id="btn">BUTTONS</h2>
+
+	<p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
+<div class="body-button">
+	<button class="button disabled">Disabled Button</button>
+	<button class="button2">Button Element</button>
+	<input class="button3" type="submit" value="Submit Input">
+	<input class="button4" type="button" value="Button Input">
+	<input class="button5" type="reset" value="Reset">
+</div>
+	<div>
+	<pre class="code-button">
+		<code>	
+&lt;!-- Standard buttons -->
+	&lt;button class="button disabled">Disabled Button&gt;/button>
+	&lt;button>Button element&lt;/button&gt;
+	&lt;input type="submit" value="Submit Input"&gt;
+	&lt;input type="button" value="Button Input"&gt;
+	&lt;input type="reset" value="Reset"&gt;
+	</code>
+</pre>
+	</div>
+<hr>
+</div>
+<div class="container">
+<div class="forms">
+	<h2 id="form">FORMS</h2>
+	<p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
+	<form>
+		<div class="row">
+			<div class="col-30">
+			<label for="name">Title</label>: 
+				<select id="title" name="Title">
+						<option>------Title------</option>
+						<option value="mr">Mr.</option>
+						<option value="ms">Ms.</option>
+						<option value="mrs">Mrs.</option>
+				</select>
+				<br>
+						<br>
+				<label for="name">First Name:</label>
+				<input type="text" class="fname" placeholder="Enter First Name.."><br>
+				<br>
+				<label for="name">Last Name:</label>
+				<input type="text" class="lname" placeholder="Enter Last Name.."><br><br>
+				<label for="gender">Gender: </label>
+				<label class="gender"></label>
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other<br>
+				<input class="button-form" type="submit" value="Submit Input">
+				</div>
+				<div class="col-70">
+
+				<pre class="form-code">
+					<code>
+&lt;!-- On the left form looks like this -->
+	&lt;form>
+		&lt;label for="name"&gt;Title&lt;/label&gt;: 
+		&lt;select id="title" name="Title"&gt;
+			&lt;option>------Title------&lt;/option&gt;
+			&lt;option value="mr">Mr.&lt;/option&gt;
+			&lt;option value="ms">Ms.&lt;/option&gt;
+			&lt;option value="mrs">Mrs.&lt;/option&gt;
+		&lt;/select&gt;
+
+		&lt;label for="name">First Name:&lt;/label>
+			&lt;input type="text" class="fname" placeholder="Enter First Name.."&gt;
+		&lt;label for="name">Last Name:&lt;/label>
+			&lt;input type="text" class="lname" placeholder="Enter Last Name.."&gt;
+		&lt;label for="gender">Gender: &lt;/label&gt;
+			&lt;label class="gender">&lt;/label&gt;
+			&lt;input type="radio" name="gender" value="male"&gt;Male
+			&lt;input type="radio" name="gender" value="female"&gt;Female
+			&lt;input type="radio" name="gender" value="other"&gt;Other
+  			&lt;input class="button-primary" type="submit" value="Submit"&gt;
+&lt;/form&gt;
+	</code>
+</pre>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+	</form>
+
+
+</div>
+<hr>
+</div>
+
+<div>
+<h2 id="tbl">TABLES</h2>
+
+<p>Be sure to use properly formed table markup with <code>&lt;thead></code> and <code>&lt;tbody></code> when building a table.</p>
+<h4>Table 1</h4>
+<table class="tbl-1">
+<thead class="tb1-hover">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+ </thead>
+ <tbody class="tb1-hover">
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr">
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+ </tbody>
+</table>
+
+<div class="table-code">
+<pre>
+<code>
+&lt;!-- Table 1 --&gt;
+	&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+   &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Peter&lt;/td&gt;
+    &lt;td>Griffin&lt;/td>&gt;
+    &lt;td>$100&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td&gt;Lois&lt;/td&gt;
+    &lt;td&gt;Griffin&lt;/td&gt;
+   &lt;td&gt;$150&lt;/td&gt;
+  &lt;/tr&gt;
+ &lt;tr&gt;
+    &lt;td&gt;Joe&lt;/td&gt;
+    &lt;td>Swanson&lt;/td>&gt;
+    &lt;td&gt;$300&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Cleveland&lt;/td&gt;
+    &lt;td&gt;Brown&lt;/td&gt;
+    &lt;td&gt;$250&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table>
+
+</code>
+</pre>
+</div>
+
+<h4>Table 2</h4>
+<div class="tbl-2">
+<table>
+<thead class="tb2">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Location</th>
+    </tr>
+</thead>
+<tbody class="tb-body-2">
+    <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+    </tr>
+    <tr>
+      <td>Carl Clavio</td>
+      <td>50</td>
+      <td>Male</td>
+      <td>London</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<hr>
+<div>
+	<h2 id="alert">Alert Messages</h2>
+
+<p>Click on the "x" symbol to close the alert message.</p>
+<div class="alert-1">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+<div class="alert-2">
+	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+	<strong>Success!</strong> Indicates a successful or positive action.
+</div>
+<div class="alert-3">
+	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<strong>Info!</strong> Indicates a neutral informative change or action.
+	</div>
+<div class="alert-4">
+<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+	<strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+<div class="alert-code">
+<pre>
+	<code>
+&lt;div class="alert-1"&gt;
+  &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span> 
+  &lt;strong&gt;Danger!&lt;/strong> Indicates a dangerous or potentially negative action.
+&lt;/div&gt;	
+	</code>
+</pre>
+</div>
+<hr>
+<div class="container">
+	<h2 id="grid">GRID SYSTEM</h2>
+	<p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</p>
+</div>
+<div class="grid-container">
+	
+        <div class="row">
+            <div class="col-1"><p>one</p></div> 
+            <div class="col-11"><p>eleven</p></div>
+          </div>
+          <div class="row">
+            <div class="col-2"><p>two</p></div> 
+			<div class="col-10"><p>ten</p></div> 
+		</div>
+		<div class="row">
+            <div class="col-3"><p>three</p></div> 
+            <div class="col-9"><p>nine</p></div>
+          </div>
+          <div class="row">
+            <div class="col-4"><p>four</p></div> 
+             <div class="col-8"><p>eight</p></div> 
+           </div>
+<div class="row">
+            <div class="col-5"><p>five</p></div> 
+            <div class="col-7"><p>seven</p></div> 
+                <div class="clearfix"></div>
+           </div>
+
+          <div class="row">
+            <div class="col-6"><p>six</p></div>
+            <div class="col-6"><p>six</p></div>
+                <div class="clearfix"></div>
+           </div>
+         <div class="row">
+          	<div class="col-7"><p>seven</p></div> 
+            <div class="col-5"><p>five</p></div> 
+                <div class="clearfix"></div>
+          </div>
+
+           <div class="row">
+				<div class="col-8"><p>eight</p></div> 
+				<div class="col-4"><p>four</p></div> 
+				    <div class="clearfix"></div>
+           </div>
+
+           <div class="row">
+           	 <div class="col-9"><p>nine</p></div>
+           	 <div class="col-3"><p>three</p></div> 
+           	     <div class="clearfix"></div>
+           </div>
+            
+            <div class="row">
+            	<div class="col-10"><p>ten</p></div> 
+            	<div class="col-2"><p>two</p></div> 
+            	    <div class="clearfix"></div>
+            </div>
+            <div class="row">
+            	 <div class="col-11"><p>eleven</p></div>
+            	<div class="col-1"><p>one</p></div> 
+               <div class="clearfix"></div>
+            </div>
+            
+             
+            <div class="clearfix"></div>
+		<pre class="grid-code">
+			<code>
+&lt;!-- .container is main centered wrapper --&gt;
+
+	&lt;div class="container">
+
+&lt;!-- columns should be the immediate child of a .row --&gt;
+	&lt;div class="row">
+   		&lt;div class="one column"&gt;One&lt;/div&gt;
+   		&lt;div class="eleven columns">Eleven&lt;/div&gt;
+  	&lt;/div>
+
+&lt;!-- just use a number and class 'column' or 'columns' --&gt;
+ 	&lt;div class="row">
+   		&lt;div class="two columns">Two&lt;/div&gt;
+   		&lt;div class="ten columns">Ten&lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+			</code>
+		</pre>
+        </div> 
+        
+		
+	</div>
+	
+</div>
+</div>
+</body>
+</html>
